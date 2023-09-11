@@ -1,0 +1,7 @@
+https://docs.portainer.io/start/install-ce/server/swarm/linux
+
+curl -L https://downloads.portainer.io/ce2-19/portainer-agent-stack.yml -o portainer-agent-stack.yml
+
+docker stack deploy -c portainer-agent-stack.yml portainer
+
+http://192.168.12.137:9000/#!/1/docker/dashboard
